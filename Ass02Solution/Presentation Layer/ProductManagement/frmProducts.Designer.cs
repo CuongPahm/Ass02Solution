@@ -44,13 +44,15 @@
             label2 = new Label();
             label1 = new Label();
             btnCLose = new Button();
+            txtSearch = new TextBox();
+            btnSearch = new Button();
             ((System.ComponentModel.ISupportInitialize)dgvProductList).BeginInit();
             SuspendLayout();
             // 
             // dgvProductList
             // 
             dgvProductList.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dgvProductList.Location = new Point(81, 270);
+            dgvProductList.Location = new Point(81, 363);
             dgvProductList.Name = "dgvProductList";
             dgvProductList.RowTemplate.Height = 25;
             dgvProductList.Size = new Size(639, 150);
@@ -60,7 +62,7 @@
             // 
             // btnDelete
             // 
-            btnDelete.Location = new Point(366, 218);
+            btnDelete.Location = new Point(356, 213);
             btnDelete.Name = "btnDelete";
             btnDelete.Size = new Size(75, 23);
             btnDelete.TabIndex = 43;
@@ -70,7 +72,7 @@
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(176, 218);
+            btnAdd.Location = new Point(166, 213);
             btnAdd.Name = "btnAdd";
             btnAdd.Size = new Size(75, 23);
             btnAdd.TabIndex = 42;
@@ -176,7 +178,7 @@
             // 
             // btnCLose
             // 
-            btnCLose.Location = new Point(553, 218);
+            btnCLose.Location = new Point(543, 213);
             btnCLose.Name = "btnCLose";
             btnCLose.Size = new Size(75, 23);
             btnCLose.TabIndex = 29;
@@ -184,11 +186,29 @@
             btnCLose.UseVisualStyleBackColor = true;
             btnCLose.Click += btnCLose_Click;
             // 
+            // txtSearch
+            // 
+            txtSearch.Location = new Point(82, 315);
+            txtSearch.Name = "txtSearch";
+            txtSearch.Size = new Size(165, 23);
+            txtSearch.TabIndex = 45;
+            // 
+            // btnSearch
+            // 
+            btnSearch.Location = new Point(266, 314);
+            btnSearch.Name = "btnSearch";
+            btnSearch.Size = new Size(75, 23);
+            btnSearch.TabIndex = 46;
+            btnSearch.Text = "Search";
+            btnSearch.UseVisualStyleBackColor = true;
+            // 
             // frmProducts
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(800, 541);
+            Controls.Add(btnSearch);
+            Controls.Add(txtSearch);
             Controls.Add(dgvProductList);
             Controls.Add(btnDelete);
             Controls.Add(btnAdd);
@@ -231,5 +251,7 @@
         private Label label2;
         private Label label1;
         private Button btnCLose;
+        private TextBox txtSearch;
+        private Button btnSearch;
     }
 }
